@@ -9,7 +9,9 @@ const ThemeSwitch = () => {
         onChange={toggleColorMode}
         isChecked={colorMode === "dark"}
       />
-      <Text>{colorMode === "dark" ? "Dark Mode" : "Light Mode"}</Text>
+      <Text whiteSpace="nowrap">
+        {colorMode === "dark" ? "Dark Mode" : "Light Mode"}
+      </Text>
     </HStack>
   )
 }
